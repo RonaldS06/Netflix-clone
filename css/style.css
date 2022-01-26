@@ -1,0 +1,359 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+:root{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+body{
+    background-color: #141414;
+}
+
+/* Sección del logo */
+header nav{
+   width: 100%;
+   height: 4.25rem;
+}
+
+nav{
+    
+}
+
+.nav__logo{
+    text-align: center;
+    margin-top: 30px;
+}
+/* Fin del logo */
+
+/* Inicio titulo */
+
+.title__user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title__user h1{
+    color: white;
+    font-weight:unset;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 4.1875rem;
+}
+/* Fin */
+
+/* Inicio Usarios */
+.users{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.users img{
+    margin: 1.25rem 0.9375rem 0rem 0.9375rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+.users img:hover{
+    border: 0.1875rem solid white;
+}
+
+.users .usuario__plus {
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    font-size: 5rem;
+    color: grey;
+    
+    padding: 0;
+    text-align: center;
+    transition: all .5s;
+}
+
+.fa-plus-circle{
+    margin-top: 1.6875rem;
+}
+.fa-plus-circle:active{
+    color: white;
+}
+
+.users p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.75rem;
+    cursor: pointer;
+}
+
+.fa-plus-circle + p {
+    margin: 1.375rem 0 0 0;
+    font-size: 1.125rem;
+}
+
+/* Parte del usuario */
+
+.container__menu{
+    z-index: 2;
+    width: 100%;
+    height: 4.25rem;
+    position: absolute;
+
+    display: flex;
+    justify-content: space-between;
+    transition: .5s ease;
+}
+
+.container__menu .logo__home{
+    position: relative;
+    
+    text-align: center;
+    display: none;
+}
+.fondo-imagen {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 37.5rem;
+    background-image: linear-gradient(to top, rgb(0 0 0) 0%, rgb(0 0 0 / 85%) 20%, rgba(0, 0, 0, 0.131) 50%, rgb(0 0 0 / 93%) 100%), url(../img/fondo_smart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -3.125rem;
+    background-position: center;
+}
+
+.container__menu .logo__small{
+    margin-top: 0.6875rem;
+}
+
+.perfil__icons {
+    width: 6.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fa-search{
+    color: white;
+    font-size: 1.25rem;
+}
+
+.navbar{
+    position: absolute;
+    margin-top: 3.75rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    transition: all .3s ease;
+}
+.navbar.active {
+    transition: all .5s;
+    background-color: #000000cc;
+    margin-top: 0;
+    z-index: 1000;
+    /* background: linear-gradient(360deg,rgba(0, 0, 0, 0.027) ,rgba(0, 0, 0, 0.061), rgba(0, 0, 0, 0.548)); */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-evenly;
+}
+/* .navbar ul li{
+    margin: 0 0.625rem;
+} */
+.fa-sort-down{
+    vertical-align: text-top;
+}
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: all .5s;
+}
+.navbar ul li a:hover{
+    font-weight: bold;
+}
+ul.desplegable{
+    display: none;
+    position: absolute;
+}
+
+.navbar > ul > li:hover > ul{
+    display: inline-block;
+}
+
+.navbar > ul > li:hover ul > li{
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 0.5rem;
+    line-height: 1.5625rem;
+    font-size: 0.9063rem;
+
+}
+
+.movie__name{
+    text-align: center;
+    padding: 19.9375rem 0 0;
+}
+
+.fondo__movie ul {
+    padding: 0 0.75rem;
+    color: white;
+    display: flex;
+    font-size: 0.6875rem;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.items{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+}
+.items .mi__lista span, .items .info span{
+    display: block;
+}
+
+.boton__play{
+    width: 8.125rem;
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.boton__play:hover{
+    background-color: #525252;
+}
+
+/* Sección top 10 */
+
+.top10{
+    background-color: black;
+}
+.container__top10, 
+.container__action, 
+.container__comedy, 
+.container__terror,
+.container__anime,
+.container__comedias{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 131px;
+
+    overflow-x: scroll;
+    /* mozzila hide scrollbar */
+    scrollbar-width: none;
+}
+
+.movies{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 8px;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.img-fluid{
+    height: 100%;
+    object-fit: cover;
+}
+
+.container__action, 
+.container__comedy,
+.container__terror,
+.container__anime,
+.container__comedias{
+    margin: 10px 0 20px;
+}
+
+/* Safari and chrome hide scrollbar*/
+.container__top10::-webkit-scrollbar, 
+.container__action::-webkit-scrollbar,
+.container__comedy::-webkit-scrollbar,
+.container__terror::-webkit-scrollbar,
+.container__anime::-webkit-scrollbar,
+.container__comedias::-webkit-scrollbar
+{
+    display: none;
+}
+.subtitulo{
+    color: white;
+    font-weight: bold;
+    margin-left: .7rem;
+}
+.subtitulo p{
+    margin: 0;
+    padding-top: 0.5rem;
+    display: inline-block;
+    transition: all .5s ease-in-out;
+}
+
+.subtitulo p:hover::after{
+    content: 'Explorar todos';
+    color: white;
+    font-size: 10px;
+    margin-left: 8px;
+}
+
+svg#rank-1, svg#rank-2{
+    margin: 0 -5px;
+    width: 74px;
+    height: 100px;
+}
+
+.giphy-embed{
+    display: none;
+}
+img.img-movie{
+    transition: all .5s ease-in-out;
+    border-radius: 0.3125rem;
+}
+
+img.img-movie:hover{
+    z-index: 100;
+    filter: sepia(2);
+}
+
+path {
+    filter: drop-shadow(-3px 16px 13px rgb(255, 255, 255));
+}
+
+/* Seccion de intriga y acción */
+#action{
+    background-color: black;
+}
+/* Para celulalares M - l */
+@media (min-width:576px) {
+    .logo__home{
+        display: none;
+    } 
+    .fondo-imagen{
+        background-position-x:center ;
+    }
+}
+
+@media (min-width:768px) {
+    .container__menu .logo__home{
+        display: inline-block;
+    }
+}
