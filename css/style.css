@@ -247,7 +247,8 @@ ul.desplegable{
 .container__comedy, 
 .container__terror,
 .container__anime,
-.container__comedias{
+.container__comedias,
+.container__continue{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -279,7 +280,8 @@ ul.desplegable{
 .container__comedy,
 .container__terror,
 .container__anime,
-.container__comedias{
+.container__comedias,
+.container__continue{
     margin: 10px 0 20px;
 }
 
@@ -289,9 +291,37 @@ ul.desplegable{
 .container__comedy::-webkit-scrollbar,
 .container__terror::-webkit-scrollbar,
 .container__anime::-webkit-scrollbar,
-.container__comedias::-webkit-scrollbar
+.container__comedias::-webkit-scrollbar,
+.container__continue::-webkit-scrollbar
 {
     display: none;
+}
+.barra__horizontal::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: red;
+    z-index: 1000000;
+    bottom: 0;
+}
+.hz-uno::before{
+    width: 10.25rem;
+}
+
+.hz-dos::before{
+    width: 74px;
+}
+.hz-tres::before{
+    width: 8.375rem;
+}
+.hz-cuatro::before{
+    width: 12.5rem;
+}
+.hz-cinco::before{
+    width: 4.125rem;
+}
+.hz-seis::before{
+    width: 8.875rem;
 }
 .subtitulo{
     color: white;
