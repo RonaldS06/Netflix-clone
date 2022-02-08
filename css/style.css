@@ -19,7 +19,6 @@ header nav{
    height: 4.25rem;
 }
 
-
 .nav__logo{
     text-align: center;
     margin-top: 30px;
@@ -218,8 +217,17 @@ ul.desplegable{
     font-weight: 300;
     margin-bottom: 1.25rem;
 }
+a{
+    text-decoration: none;
+}
+
 .items .mi__lista span, .items .info span{
     display: block;
+    color: white;
+}
+.fa, .fas {
+    font-weight: 900;
+    color: white;
 }
 
 .boton__play{
@@ -236,6 +244,29 @@ ul.desplegable{
 .boton__play:hover{
     background-color: #525252;
 }
+
+
+.mi__lista:hover .fa-plus{
+    display: none;
+}
+.fa-check{
+    display: none;
+    color: white;
+    margin-bottom: 1.5px;
+}
+.mi__lista:hover .fa-check{
+    display: block;
+    animation: icono .3s linear;
+}
+@keyframes icono{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
 
 /* Sección top 10 */
 
@@ -299,11 +330,13 @@ ul.desplegable{
 .barra__horizontal::before{
     content: '';
     position: absolute;
+    border-radius: 0 0 12px;
     height: 4px;
     background-color: red;
-    z-index: 1000000;
+    
     bottom: 0;
 }
+a:active { color: rgb(255, 0, 0); }        /* Enlaces activos */
 .hz-uno::before{
     width: 10.25rem;
 }
@@ -365,11 +398,37 @@ path {
     filter: drop-shadow(-3px 16px 13px rgb(255, 255, 255));
 }
 
-/* commits */
-/* Seccion de intriga y acción */
-#action{
-    background-color: black;
+footer{
+    text-align: center;
 }
+footer p{
+    font-size: 11px;
+    color: white;
+    padding: 4px;
+    opacity: .7;
+}
+
+footer p > span{
+    font-weight: bold;
+}
+
+/* img, a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+} */
+
+
+/* Pagina de Kung Fu Panda 3*/
+.banner__panda {
+    z-index: -1;
+    margin-top: 73px;
+    background-image: radial-gradient(farthest-side at 73% 21%,transparent,rgb(10 141 103 / 28%)), url(../img/panda/banner1.jpeg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
 /* Para celulalares M - l */
 @media (min-width:576px) {
     .logo__home{
