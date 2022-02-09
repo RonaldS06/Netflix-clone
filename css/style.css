@@ -240,6 +240,9 @@ a{
     cursor: pointer;
     transition: all .5s;
 }
+.boton__play a{
+    color: white;
+}
 
 .boton__play:hover{
     background-color: #525252;
@@ -541,7 +544,7 @@ video{
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    margin-top: 15px;
+    margin: 20px 0;
 }
 .items-panda p{
     margin:0;
@@ -573,9 +576,22 @@ video{
     color: red;
 }
 
-.item_compartir{
-    margin-bottom: 19px;
+
+.fixed{
+    width: 100%;
+    position: fixed;
+    transition: all .9s ease-in-out;
 }
+header.container__menu.fixed.active {
+    background-color: black;
+}
+
+
+/* .orange{
+    background-color: red;
+    height: 1430px;
+    width: 100px;
+} */
 /* Para celulalares M - l */
 @media (min-width:576px) {
     .logo__home{
