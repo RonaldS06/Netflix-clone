@@ -10,7 +10,7 @@
     scroll-padding-top: 50px;
 }
 body{
-    background-color: #141414;
+    background-color: black;
 }
 
 /* Sección del logo */
@@ -418,8 +418,8 @@ footer p > span{
 
 
 /* Pagina de Kung Fu Panda 3*/
-.banner__panda {
-    z-index: -1;
+/* .banner__panda {
+    z-index: 1000;
     margin-top: 73px;
     background-image: radial-gradient(farthest-side at 73% 21%,transparent,rgb(10 141 103 / 28%)), url(../img/panda/banner1.jpeg);
     width: 100%;
@@ -427,8 +427,155 @@ footer p > span{
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
+    animation: imagendelete 139s linear;
+
+} */
+
+.fa-arrow-left {
+    font-size: 15px;
+    margin-top: 17px;
+    margin-left: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 8px 10px;
 }
 
+video.rell1 {
+    margin-top: 42px;
+}
+video{
+    width: 100%;
+    z-index: -1;
+}
+.banner__panda{
+    color: white;
+}
+.banner__panda h2 {
+    margin-top: -19px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.info-video{
+    opacity: .75;
+    margin-top: 18px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+.info-video .edad{
+    margin-left: 6px;
+    background-color: #525252;
+    padding: 1px 3px;
+}
+.info-video .tiempo{
+    margin-left: 6px;
+}
+
+.botones{
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.botones .boton1,.botones .boton2{
+    background-color: #181616;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+.botones .boton1:hover,.botones .boton2:hover{
+    background: gray;
+}
+
+.fa-play, .fa-download{
+    margin-right: 5px;
+}
+
+/* Descripcion */
+.banner__panda .descripcion{
+    font-weight: 400;
+    font-size: 13px;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.banner__panda .descripcion p{
+    margin: 0;
+}
+
+.banner__panda .descripcion p:nth-child(2),
+.banner__panda .descripcion p:nth-child(3){
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: .8;
+}
+.banner__panda .descripcion p:nth-child(3){
+    margin-top: 0;
+}
+.banner__panda .descripcion p span{
+    opacity: .6;
+}
+
+/* Boton likes */
+.likes {
+    font-size: 0.8125rem;
+    text-align: center;
+    font-weight: 700;
+    background-color: red;
+    width: 10.1875rem;
+    padding: 0.25rem 0.875rem;
+    border-radius: 1.875rem;
+    margin-left: 0.625rem;
+    margin-top: 0.625rem;
+}
+
+
+
+/* Items para seccion panda */
+.items-panda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 15px;
+}
+.items-panda p{
+    margin:0;
+    font-size: 12px;
+}
+
+
+.items-panda .item_lista:hover .fa-plus{
+    display: none;
+}
+
+.items-panda .item_lista:hover .fa-check{
+    display: inline-block;
+    animation: icon .3s linear;
+}
+@keyframes icon {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+.items-panda .item_calificar .fa-thumbs-up{
+    transition: all .5s;
+}
+.items-panda .item_calificar .fa-thumbs-up:hover {
+    color: red;
+}
+
+.item_compartir{
+    margin-bottom: 19px;
+}
 /* Para celulalares M - l */
 @media (min-width:576px) {
     .logo__home{

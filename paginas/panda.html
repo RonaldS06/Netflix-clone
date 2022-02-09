@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/40f3b3fe2b.js" crossorigin="anonymous"></script>
 
@@ -17,14 +17,9 @@
 </head>
 <body>
     <header class="container__menu">
-        <div class="logo__home">
-            <img src="../img/logo-netflix.svg" alt="" width="92.5" height="31">
-        </div>
-
-        <div class="logo__small">
-            <a href="../index.html"><img src="../img/logoNetflix2.svg" alt="" width="50" height="45"></a>
-        </div>
-
+        <a href="../usuario2.html">
+        <i class="fas fa-arrow-left"></i>
+        </a>
         <div class="perfil__icons">
             <i class="fas fa-search"></i>
             <div class="perfil_usuario">
@@ -34,6 +29,59 @@
     </header>
 
         <section class="banner__panda">
+            <!-- <img src="../img/panda/banner1.jpeg" alt=""> -->
+            <div class="videorell">
+                <video loop autoplay muted controls poster="../img/panda/banner1.jpeg" class="rell1">
+                    <source src="../video/videopanda.mp4" type="video/mp4">
+                    <source src="../video/videopanda.mp4" type="video/wav">
+                    El navegador no puede reproducir el video.
+                </video>
+                <h2>Kung Fu Panda 3</h2>
+            </div>
+            
+
+            <div class="info-video">
+                <span class="fecha">2016</span>
+                <span class="edad">7+</span>
+                <span class="tiempo">1 h 34 min</span>
+            </div>
+
+            <div class="botones">
+                <div class="boton1">
+                <i class="fas fa-play"></i>
+                    Ver
+                </div>
+                <div class="boton2">
+                    <i class="fas fa-download"></i>
+                    Descargar
+                </div>
+            </div>
+            <div class="descripcion">
+                <p>Po y su padre visitan un pueblo secreto de pandas, cuando un espíritu malvado amenaza a toda china, por lo que Po debe reunir un ejército de locales dispares. Una misión: defender a China de un espíritu devastador.</p>
+                <p>Protagonistas: <span> Jack black, Bryan Cranston, Dustin Hoffman... </span>más</p>
+                <p>Dirección: <span>Jennifer Yuh Nelson, Alessandro Carloni</span></p>
+            </div>
+
+            <div class="likes">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Con más "Me gusta"</span>
+            </div>
+
+            <div class="items-panda">
+                <div class="item_lista">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-check"></i>
+                    <p>Mi lista</p>
+                </div>
+                <div class="item_calificar">
+                    <i class="fas fa-thumbs-up"></i>
+                    <p>Calificar</p>
+                </div>
+                <div class="item_compartir">
+                    <a href="https://api.whatsapp.com/send?text=[Hola]"><i class="fas fa-share"></i></a>
+                    <p>Compartir</p>
+                </div>
+            </div>
         </section>
 
 </body>
