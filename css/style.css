@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
     padding: 0;
 }
+
+a{
+    color: white;
+}
 :root{
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
