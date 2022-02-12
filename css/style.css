@@ -112,6 +112,10 @@ header nav{
     text-align: center;
     display: none;
 }
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: white;
+    text-decoration: none;
+}
 .fondo-imagen {
     position: absolute;
     z-index: -1;
@@ -164,6 +168,7 @@ header nav{
     flex-direction: row;
     padding: 0;
     justify-content: space-evenly;
+    margin: 8px 0 5px;
 }
 /* .navbar ul li{
     margin: 0 0.625rem;
@@ -309,7 +314,7 @@ a{
     height: 100%;
     cursor: pointer;
 }
-.img-fluid{
+.img-fluido{
     height: 100%;
     object-fit: cover;
 }
@@ -388,9 +393,6 @@ svg#rank-1, svg#rank-2{
     height: 100px;
 }
 
-.giphy-embed{
-    display: none;
-}
 img.img-movie{
     transition: all .5s ease-in-out;
     border-radius: 0.3125rem;
@@ -471,11 +473,13 @@ video{
     font-weight: 400;
 
 }
-.info-video .edad{
+.info-video .edad {
     margin-left: 6px;
     background-color: #525252;
-    padding: 1px 3px;
+    padding: 2px 6px;
+    border-radius: 2px;
 }
+
 .info-video .tiempo{
     margin-left: 6px;
 }
@@ -589,8 +593,46 @@ video{
 header.container__menu.fixed.active {
     background-color: black;
 }
+div#efectoCanvas {
+    background-color: transparent;
+}
+.offcanvas-header {
+    border-radius: 17px 17px 0 0;
+}
+button.btn-close.text-reset {
+    grid-column: end;
+    color: white!important;
 
+}
 
+img[alt="top1"]{
+    width: 90px;
+}
+
+.caja-info {
+    display: block;
+    opacity: .6;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.offcanvas-header.bg-dark.text-white {
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr;
+    align-items: start;
+}
+
+span.descripcion-canvas.m-0 {
+    display: block;
+    font-size: 13.5px;
+    line-height: 17px;
+    font-weight: 400;
+}
+i.bi.bi-x.fs-2{
+    font-size: calc(1.375rem + 1.5vw)!important;
+    position: absolute;
+    margin: -0.875rem 0px 0px -0.875rem;
+}
 /* .orange{
     background-color: red;
     height: 1430px;
