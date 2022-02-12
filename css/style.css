@@ -593,9 +593,7 @@ video{
 header.container__menu.fixed.active {
     background-color: black;
 }
-div#efectoCanvas {
-    background-color: transparent;
-}
+
 .offcanvas-header {
     border-radius: 17px 17px 0 0;
 }
@@ -605,8 +603,9 @@ button.btn-close.text-reset {
 
 }
 
-img[alt="top1"]{
+img[alt^="top"]{
     width: 90px;
+    border-radius: 4px;
 }
 
 .caja-info {
@@ -620,7 +619,7 @@ img[alt="top1"]{
     display: grid;
     grid-template-columns: 1fr 15fr 1fr;
     align-items: start;
-    height: 147px;
+    height: 162px;
 }
 
 span.descripcion-canvas.m-0 {
@@ -635,12 +634,11 @@ i.bi.bi-x.fs-2{
     margin: -0.875rem 0px 0px -0.875rem;
 }
 
-div#efectoCanvas {
+div[id^="efectoCanvas"]{
     height: 220px;
+    background: transparent;
 }
-
 .botones__canvas {
-    padding-top: 10px;
     height: 110px;
 }
 
@@ -653,6 +651,9 @@ div#efectoCanvas {
     padding: 1px 60px;
 }
 
+.botones__canvas .ver:hover {
+    background-color: #383434;
+}
 span.fw-normal{
     font-size: 12px;
     margin-top: -5px;
